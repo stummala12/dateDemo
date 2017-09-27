@@ -3,17 +3,26 @@
     Created on : Sep 24, 2017, 7:50:01 PM
     Author     : Sai Nikita Tummala
 --%>
-
+<%@page import="java.util.Date" %>"
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>hello world</title>
+        <title>Simple Date Demo</title>
     </head>
+    
+    <% 
+        
+        Date today = new Date();
+
+    %>
     <body>
+        
+        
         <h1>Hello World!</h1>
-        Today is: <%= new java.util.Date().toString()%>
+        <p> Today is: <%= today %>
+        
                 
     </body>
 </html>
